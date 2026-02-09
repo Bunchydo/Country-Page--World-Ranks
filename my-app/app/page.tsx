@@ -1,6 +1,7 @@
 "use client";
 
 import Country from "./countries";
+import "./globals.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -196,7 +197,7 @@ export default function Home() {
           </div>
           <hr className="mt-[3%] mb-[7%]" />
           {/* Map over all countries */}
-          <div className="scrolling-column flex flex-1 lg:overflow-y-auto">
+          <div className="hide-scrollbar scrolling-column flex flex-1 lg:overflow-y-auto">
             <div className="flex flex-col gap-y-8">
               {filteredCountries.map((country, index) => (
                 <Country
